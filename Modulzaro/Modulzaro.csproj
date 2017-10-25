@@ -54,6 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Calc.cs" />
+    <Compile Include="EstimateViewModel.cs" />
+    <Compile Include="LanguageViewForm.xaml.cs">
+      <DependentUpon>LanguageViewForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EstimateViewForm.xaml.cs">
+      <DependentUpon>EstimateViewForm.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,10 +70,23 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BaseModel1.cs" />
+    <Compile Include="LanguageViewModel.cs" />
+    <Compile Include="LanguangeFormViewModel.cs" />
+    <Compile Include="Estimate.cs" />
+    <Compile Include="Language.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="LanguageViewForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EstimateViewForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

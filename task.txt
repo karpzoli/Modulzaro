@@ -1,0 +1,20 @@
+Class:
+Language
+	name
+	field (BE, FE, Mobile)
+	knowledgeLevel ( int %)
+Estimate
+	difficulty (int 1-10)
+	field (BE, FE, Mobile)
+
+Window:
+	KnownLangListForm
+		ListBox „{Név} –{Készség} %”
+		button: Edit
+		button: Add
+		button: Estimations
+	AddEditLangForm
+	EstimationForm
+	
+	
+

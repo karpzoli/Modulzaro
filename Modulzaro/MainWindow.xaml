@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Modulzaro"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="400" Width="525">
     <Grid>
-        
+        <ListBox HorizontalAlignment="Left" Height="224" Margin="23,85,0,0" VerticalAlignment="Top" Width="200"
+                 ItemsSource="{Binding LanguageList}" SelectedItem="{Binding SelectLanguage}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Label Content="{Binding Name}"/> <Label Content="{Binding KnowledgeLevel}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="Programozási nyelvek:" HorizontalAlignment="Left" Height="31" Margin="24,26,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button Content="Új nyelv" HorizontalAlignment="Left" Height="41" Margin="317,47,0,0" VerticalAlignment="Top" Width="152" Click="NewLanguageButton" />
+        <Button Content="Nyelv szerkesztése" HorizontalAlignment="Left" Height="41" Margin="317,111,0,0" VerticalAlignment="Top" Width="152" Click="EditLanguageButton" />
+        <Button Content="Becslés" HorizontalAlignment="Left" Height="41" Margin="317,174,0,0" VerticalAlignment="Top" Width="152" Click="EstimateButton" />
     </Grid>
 </Window>
